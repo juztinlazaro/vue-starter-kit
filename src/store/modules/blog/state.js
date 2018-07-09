@@ -1,6 +1,6 @@
 const state = {
   loading: false,
-  blogs: [],
+  blogs: {},
   error: [],
 };
 

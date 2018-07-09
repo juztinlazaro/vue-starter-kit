@@ -1,8 +1,6 @@
 const getters = {
   blogs: state => {
-    return {
-      ...state,
-    };
+    return state.blogs
   },
 };
 
