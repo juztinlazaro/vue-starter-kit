@@ -21,12 +21,12 @@
 export default {
   created() {
     console.log('store', this.$store);
-    console.log('blog', this.blog);
     this.$store.dispatch('blog/getBlogRequest')
   },
   computed: {
     blog() {
-      return this.$store.getters['blog/blogs']
+      console.log('blogss', this.$store.state.blog.blogs)
+      return this.$store.state.blog.blogs;
     },  
     loading() {
       return this.$store.state.blog.loading
