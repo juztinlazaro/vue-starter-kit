@@ -1,6 +1,7 @@
 import Home from '@/module/Home/Home.vue';
 import Company from '@/module/Company/Company.vue';
 import Blog from '@/module/Blog/Blog.vue';
+import ClipBoard from '@/module/ClipBoard/ClipBoard.vue';
 
 export const routes = [
   {
@@ -22,6 +23,13 @@ export const routes = [
     name: 'Company',
     components: {
       default: Company,
+    },
+  },
+  {
+    path: '/clipboard',
+    name: 'ClipBoard',
+    components: {
+      default: ClipBoard,
     },
   },
   // {

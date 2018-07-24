@@ -1,15 +1,25 @@
 import Vue from 'vue';
 import VueResource from 'vue-resource';
+import VueClipboards from 'vue-clipboards';
 
 import App from '@/appRoot/App.vue';
 import router from '@/appRoot/router/route.config';
 import rootStore from '@/store/rootStore';
 import filters from '@/common/filters';
+import BootstrapVue from 'bootstrap-vue'
+
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
 import './assets/css/main.scss';
 
 Vue.config.productionTip = false;
 
+
+Vue.use(BootstrapVue);
+Vue.use(VueClipboards)
 Vue.use(VueResource);
+
 Vue.http.options.root = 'https://stock-trader-cbcb5.firebaseio.com/';
 
 filters;
