@@ -15,7 +15,7 @@ const actions = {
           console.log(error);
           commit('getBlogsError', error);
         });
-    }, 4000);
+    }, 1000);
   },
 };
 
