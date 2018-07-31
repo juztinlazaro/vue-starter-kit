@@ -5,6 +5,7 @@ import App from '@/appRoot/App.vue';
 import router from '@/appRoot/router/route.config';
 import rootStore from '@/store/rootStore';
 import filters from '@/common/filters';
+import '@/common/api/config';
 import './assets/css/main.scss';
 
 Vue.config.productionTip = false;
