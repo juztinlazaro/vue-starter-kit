@@ -6,7 +6,7 @@ const actions = {
 
     setTimeout(() => {
       axios
-        .get('http://jsonplaceholder.typicode.com/posts/1')
+        .get('/posts/1')
         .then(result => {
           console.log(result);
           commit('getBlogsSuccess', result.data);

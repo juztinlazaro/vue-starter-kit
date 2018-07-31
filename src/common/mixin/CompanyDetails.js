@@ -1,4 +1,4 @@
-var CompanyDetails = {
+const CompanyDetails = {
   data() {
     return {
       companyContact: '01231',
