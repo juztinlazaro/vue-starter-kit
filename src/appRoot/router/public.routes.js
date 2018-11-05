@@ -1,6 +1,8 @@
 import Home from '@/module/Home/Home.vue';
-import Company from '@/module/Company/Company.vue';
+// import Company from '@/module/Company/Company.vue';
 import Blog from '@/module/Blog/Blog.vue';
+
+const AsyncCompany = () => System.import('@/module/Company/Company.vue');
 
 export const routes = [
   {
@@ -21,7 +23,7 @@ export const routes = [
     path: '/company',
     name: 'Company',
     components: {
-      default: Company,
+      default: AsyncCompany,
     },
   },
   // {
