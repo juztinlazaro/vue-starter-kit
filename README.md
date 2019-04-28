@@ -20,7 +20,7 @@ Staterkit for vuejs is an opinionated boilerplate for web development built on t
  - modules section compose of pages, or main component
 
 
-#### comoponent
+#### component
  - holds reusable component, example: custom input, loading
  
 
