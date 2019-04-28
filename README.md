@@ -28,3 +28,17 @@ Staterkit for vuejs is an opinionated boilerplate for web development built on t
  - holds a global store logics, has a module of modules and shared.
  - modules is holds of modules component global store functions such as state, gettter, mutation, and action.
  - shared is holds global and shared global store like lookups, example country, gender and etc.
+ 
+ 
+## How to start? 
+```
+ Cloning the repo
+  git clone git@github.com:juztinlazaro/vue-starter-kit.git
+
+Development
+  npm install
+  npm run start / yarn start
+
+Unit Test
+  npm run test / yarn test
+ ```
