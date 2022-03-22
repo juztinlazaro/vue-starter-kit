@@ -3,7 +3,7 @@
     <div v-if="loading">
       <h1>loading...</h1>
     </div>
-    
+
     <div v-else>
       <h1>
         Title:  {{blog.title}}
