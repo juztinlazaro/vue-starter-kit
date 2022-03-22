@@ -1,6 +1,8 @@
 <template>
   <section>
-    header
+    <a href="/blog">blogs</a>
+    |
+    <a href="/company">company</a>
   </section>
 </template>
 

@@ -13,6 +13,12 @@
     </p>
 
     <Info :getInfo="getInfo" />
+
+    <ul id="example-1">
+      <li v-for="item in items" :key="item.message">
+        {{ item.message }}
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -24,6 +30,12 @@ export default {
   mixins: [CompanyDetails],
   components: {
     Info,
+  },
+  data: {
+     items: [
+      { message: 'Foo' },
+      { message: 'Bar' }
+    ]
   },
   methods: {
     getInfo(info, show, array) {
