@@ -1,3 +1,6 @@
+/**
+    Mutations is for changing actual state of vuex.
+ */
 const mutations = {
   getBlogsLoading(state) {
     console.log('loading');

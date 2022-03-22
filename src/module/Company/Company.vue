@@ -31,11 +31,13 @@ export default {
   components: {
     Info,
   },
-  data: {
-     items: [
-      { message: 'Foo' },
-      { message: 'Bar' }
-    ]
+  data() {
+     return {
+       items: [
+          { message: 'Foo' },
+          { message: 'Bar' }
+        ]
+     }
   },
   methods: {
     getInfo(info, show, array) {

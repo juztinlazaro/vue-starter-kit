@@ -24,14 +24,13 @@ export default {
   },
   computed: {
     blog() {
-      console.log('blogss', this.$store.state.blog.blogs);
       return this.$store.state.blog.blogs;
     },
     loading() {
       return this.$store.state.blog.loading;
     },
     name() {
-      return 'justin' + this.blog.title;
+      return this.$store.getters['blog/blogModifyTitle'];
     },
   },
 };

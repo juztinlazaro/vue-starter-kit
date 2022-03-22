@@ -1,6 +1,13 @@
+/**
+ * Sometimes we may need to compute derived state based on store state.
+  * example
+    * for  filtering
+    * for sorting
+    * computing
+*/
 const getters = {
-  blogs: state => {
-    return state.blogs
+  blogModifyTitle: state => {
+    return `MODIFIED title ${state.blogs.title}`
   },
 };
 
